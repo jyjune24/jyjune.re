@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
-import { SparkleIcon, UserSecurityIcon } from '~/assets'
-import { PeekabooLink } from '~/components/links/PeekabooLink'
+// import { SparkleIcon, /*UserSecurityIcon*/ } from '~/assets'
+// import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
@@ -31,14 +31,14 @@ function Designer() {
   )
 }
 
-function OCD() {
-  return (
-    <span className="group inline-flex items-center">
-      <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>细节控</span>
-    </span>
-  )
-}
+// function OCD() {
+//   return (
+//     <span className="group inline-flex items-center">
+//       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
+//       <span>细节控</span>
+//     </span>
+//   )
+// }
 
 function Hello() {
   return (
@@ -49,14 +49,14 @@ function Hello() {
   )
 }
 
-function Founder() {
-  return (
-    <span className="group inline-flex items-center">
-      {/* <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" /> */}
-      <span>I'm jyjune</span>
-    </span>
-  )
-}
+// function Founder() {
+//   return (
+//     <span className="group inline-flex items-center">
+//       {/* <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" /> */}
+//       <span>I'm jyjune</span>
+//     </span>
+//   )
+// }
 
 export function Headline() {
   return (

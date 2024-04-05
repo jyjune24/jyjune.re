@@ -9,12 +9,12 @@ import {
   BilibiliIcon,
   GitHubIcon,
   type IconProps,
+  InsIcon,
+  JikeIcon,
   MailIcon,
   TelegramIcon,
   TwitterIcon,
   YouTubeIcon,
-  JikeIcon,
-  InsIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
