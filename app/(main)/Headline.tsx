@@ -26,7 +26,7 @@ function Designer() {
         <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
-      设计师
+      独立音乐
     </span>
   )
 }
@@ -40,11 +40,20 @@ function OCD() {
   )
 }
 
+function Hello() {
+  return (
+    <span className="group inline-flex items-center">
+      {/* <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" /> */}
+      <span>👋Hi！这是 jyjune</span>
+    </span>
+  )
+}
+
 function Founder() {
   return (
     <span className="group inline-flex items-center">
-      <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>创始人</span>
+      {/* <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" /> */}
+      <span>I'm jyjune</span>
     </span>
   )
 }
@@ -63,10 +72,60 @@ export function Headline() {
           duration: 0.3,
         }}
       >
-        <Developer />，<Designer />，
-        <span className="block h-2" />
-        <OCD />，<Founder />
+        <Hello />
+        {/* <span className="block h-2" /> */}
+        {/* <Founder /> */}
+        <span className="block h-6" />
+        <Developer />，feat.<Designer />
       </motion.h1>
+
+      <span className="block h-5" />
+      <motion.div
+        className="mt-6 flex gap-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: 'spring',
+          damping: 30,
+          stiffness: 85,
+          duration: 0.3,
+          delay: 0.1,
+        }}
+      >
+        <SocialLink
+          href="https://www.instagram.com/jyjune24"
+          aria-label="我的 Ins"
+          platform="Instagram"
+        />
+        <SocialLink
+          href="https://okjk.co/63EYfT"
+          aria-label="我的 即刻"
+          platform="Jike"
+        />
+        <SocialLink
+          href="https://cali.so/bilibili"
+          aria-label="我的 Bilibili"
+          platform="bilibili"
+        />
+        <SocialLink
+          href="https://cali.so/github"
+          aria-label="我的 GitHub"
+          platform="github"
+        />
+        <SocialLink
+          href="https://t.me/jyjune24"
+          aria-label="我的 Telegram"
+          platform="telegram"
+        />
+        {/* // TODO: support rss later. 
+        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" /> */}  
+        <SocialLink
+          href="mailto:hi@cali.so"
+          aria-label="我的邮箱"
+          platform="mail"
+        />
+      </motion.div>
+
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
         initial={{ opacity: 0, y: 20 }}
@@ -80,56 +139,11 @@ export function Headline() {
         }}
       >
         <Balancer>
-          我是 Cali，
-          <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
-          创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
-          我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
+          这里还在装修中，请见谅。        
+          <span className="block h-2" />
+          下面是一些我最近喜爱的唱片，希望你也喜欢。
         </Balancer>
       </motion.p>
-      <motion.div
-        className="mt-6 flex gap-6"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: 'spring',
-          damping: 50,
-          stiffness: 90,
-          duration: 0.35,
-          delay: 0.25,
-        }}
-      >
-        <SocialLink
-          href="https://cali.so/twitter"
-          aria-label="我的推特"
-          platform="twitter"
-        />
-        <SocialLink
-          href="https://cali.so/youtube"
-          aria-label="我的 YouTube"
-          platform="youtube"
-        />
-        <SocialLink
-          href="https://cali.so/bilibili"
-          aria-label="我的 Bilibili"
-          platform="bilibili"
-        />
-        <SocialLink
-          href="https://cali.so/github"
-          aria-label="我的 GitHub"
-          platform="github"
-        />
-        <SocialLink
-          href="https://cali.so/tg"
-          aria-label="我的 Telegram"
-          platform="telegram"
-        />
-        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
-        <SocialLink
-          href="mailto:hi@cali.so"
-          aria-label="我的邮箱"
-          platform="mail"
-        />
-      </motion.div>
     </div>
   )
 }

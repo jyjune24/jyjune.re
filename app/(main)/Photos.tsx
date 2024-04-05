@@ -63,8 +63,8 @@ export function Photos({ photos }: { photos: string[] }) {
             <Image
               src={image}
               alt=""
-              width={500}
-              height={500}
+              width={300}
+              height={100}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover"
               priority

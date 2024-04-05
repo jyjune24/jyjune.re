@@ -40,7 +40,7 @@ const nextConfig = {
       },
       {
         "source": "/tg",
-        "destination": "https://t.me/cali_so",
+        "destination": "https://t.me/jyjune24",
         "permanent": true
       },
       {
@@ -50,12 +50,22 @@ const nextConfig = {
       },
       {
         "source": "/github",
-        "destination": "https://github.com/CaliCastle",
+        "destination": "https://github.com/jyjune24",
         "permanent": true
       },
       {
         "source": "/bilibili",
-        "destination": "https://space.bilibili.com/8350251",
+        "destination": "https://space.bilibili.com/51607181",
+        "permanent": true
+      },
+      {
+        "source": "/instagram",
+        "destination": "https://www.instagram.com/jyjune24",
+        "permanent": true
+      },
+      {
+        "source": "/即刻",
+        "destination": "https://okjk.co/63EYfT",
         "permanent": true
       }
     ]

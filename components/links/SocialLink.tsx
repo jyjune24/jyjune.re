@@ -13,6 +13,8 @@ import {
   TelegramIcon,
   TwitterIcon,
   YouTubeIcon,
+  JikeIcon,
+  InsIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
@@ -22,6 +24,8 @@ type Platform =
   | 'twitter'
   | 'youtube'
   | 'telegram'
+  | 'Jike'
+  | 'Instagram'
   | 'bilibili'
   | 'mail'
   | 'rss'
@@ -41,6 +45,16 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     icon: YouTubeIcon,
     platform: 'youtube',
     label: 'YouTube',
+  },
+  '((?:okjike.com)|(?:jike.com))': {
+    icon: JikeIcon,
+    platform: 'Jike',
+    label: '即刻',
+  },
+  '((?:ins.com)|(?:instagram.com))': {
+    icon: InsIcon,
+    platform: 'Instagram',
+    label: 'Ins',
   },
   '((?:t.me)|(?:telegram.com))': {
     icon: TelegramIcon,
