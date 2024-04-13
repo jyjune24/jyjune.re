@@ -103,12 +103,12 @@ export function Headline() {
           platform="Jike"
         />
         <SocialLink
-          href="https://cali.so/bilibili"
+          href="https://space.bilibili.com/51607181"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="https://cali.so/github"
+          href="https://github.com/jyjune24"
           aria-label="我的 GitHub"
           platform="github"
         />
@@ -120,7 +120,7 @@ export function Headline() {
         {/* // TODO: support rss later. 
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" /> */}  
         <SocialLink
-          href="mailto:hi@cali.so"
+          href="mailto:junezjy@foxmail.com"
           aria-label="我的邮箱"
           platform="mail"
         />

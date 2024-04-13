@@ -1,5 +1,5 @@
 export const seo = {
-  title: 're-jyjune｜自说自话',
+  title: 're-jyjune',
   description:
     '',
   url: new URL(
